@@ -30,7 +30,7 @@
 
             margin: auto ;  /* Lifehack: This does vertically align the div */
 
-            padding-bottom: 2em;  /* HTML paddings are basically page margins duh */
+            padding-bottom: 3em;  /* HTML paddings are basically page margins duh */
             padding-top: 3em;
             padding-left: 3.8em;
             padding-right: 2em;
@@ -38,11 +38,14 @@
             border-style: solid; border-width: 0.1em; border-color: #CCCCCC;
 
             margin-top: -1em;
+
+            display: grid
         }
 
         div.hashtitle
         {
             padding-top: 1em;
+            margin-bottom: -1em;
         }
 
         td.hashtabs
@@ -56,20 +59,112 @@
             padding-bottom: 0.5em;
         }
 
-        p.hashlist
-        {
-            padding-top: 1em;
-        }
-
         h2
         {
             font-size: 24px; font-weight: normal;
+        }
+
+        p
+        {
+            line-height: 1.5;
+        }
+
+        li
+        {
+            line-height: 1.5;
+        }
+
+        div.hashwrap-hashcontent
+        {
+            width: 60%;
+    
+            display: inline-grid;
+        }
+
+        div.hashwrap-sideshcontent
+        {
+            width: 25%;
+
+            padding-bottom: 1em;  /* HTML paddings are basically page margins duh */
+            padding-top: 1em;
+            padding-left: 2em;
+            padding-right: 2em;
+         
+            display: inline-grid;
+            float: right;
+
+            border-style: solid; border-width: 0.1em; border-color: #CCCCCC;
+
+            margin-top: 1em;
+        }
+
+        li.hashlist
+        {
+            font-size: 0.9em;
+        }
+
+        p.hashwrap-sideshcontent
+        {
+            font-size: 0.9em;
+            margin-top: 0em;
+        }
+
+        div.hashrousel
+        {
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+
+            border-style: solid; border-width: 0.1em; border-color: #CCCCCC;
+        }
+
+        img.hashrousel-pics
+        {
+            display: inline-block;
+        }
+
+        div.hashwrap-footer
+        {
+            width: 900px;  /* Roughly 360p resolution in 16:9 resolution (levvel.com, 2022) */
+
+            margin: auto ;  /* Lifehack: This does vertically align the div */
+
+            padding-bottom: 3em;  /* HTML paddings are basically page margins duh */
+            padding-top: 3em;
+            padding-left: 3.8em;
+            padding-right: 2em;
+
+            border-style: solid; border-width: 0.1em; border-color: #CCCCCC;
+
+            margin-top: 2em;
+            margin-bottom: -1em;
+        }
+
+        img.hashads-left
+        {
+            float: left;
+            
+            margin-right: -10em;
+        }
+
+        img.hashads-right
+        {
+            float: right;
+            
+            margin-left: -10em;
         }
 
     </style>
 </head>
 
 <body>
+
+    <div class="hashads-left">
+
+        <img class="hashads-left" src="/10857470046559983480.jpg">
+        <img class="hashads-right" src="/10857470046559983480.jpg">
+
+    </div>
+
     <div class="hashwrap">
 
         <nav class="hashnav">
@@ -90,30 +185,52 @@
 
         </div>
 
-        <div class="hashcontent">
+        <div class="hashrousel">
 
-            <p>Best known for his poems and short fiction, Edgar Allan Poe, born in Boston, 19 January 1809, died 7 October 1849 in Baltimore, 
-                deserves more credit than any other writer for the transformation of the short story from anecdote to art. He virtually created
-                the detective story and perfected the psychological thriller. He also produced some of the most influential literary criticism
-                of his time -- important theoretical statements on poetry and the short story -- and has had a worldwide influence on literature.
-            </p>
-
-            <p>He was born as Edgar Poe in Boston, Massachusetts; His parents died when he was young. Poe was taken in by John and Frances Allan,
-                of Richmond, Virginia, but they never formally adopted him. After spending a short period at the University of Virginia and
-                briefly attempting a military career, Poe parted ways with the Allans. Poe's publishing career began humbly, with an anonymous
-                collection of poems, Tamerlane and Other Poems (1827), credited only to "a Bostonian".
-            </p>
-
-            <p class="hashlist"><b>Stories by Poe</b></p>
-            
-            <li>A Descent Into The Maelstrom (1841)</li>
-            <li>The Black Cat (1843)</li>
-            <li>The Tell-Tale Heart (1843)</li>
-            <li>The Cask of Amontillado (1846)</li>
-            <li>Bon-Bon (1850)</li>
+            <img class="hashrousel-pics" src="/britannica_poe.jpg">
+            <img class="hashrousel-pics" src="/britannica_poe.jpg">
+            <img class="hashrousel-pics" src="/britannica_poe.jpg">
+            <img class="hashrousel-pics" src="/britannica_poe.jpg">
 
         </div>
 
+        <div class="hashwrap-hashcontent">
+
+            <div class="hashcontent" style="display:inline-block">
+
+                <p>Best known for his poems and short fiction, Edgar Allan Poe, born in Boston, 19 January 1809, died 7 October 1849 in Baltimore, 
+                    deserves more credit than any other writer for the transformation of the short story from anecdote to art. He virtually created
+                    the detective story and perfected the psychological thriller. He also produced some of the most influential literary criticism
+                    of his time -- important theoretical statements on poetry and the short story -- and has had a worldwide influence on literature.
+                </p>
+
+                <p>He was born as Edgar Poe in Boston, Massachusetts; His parents died when he was young. Poe was taken in by John and Frances Allan,
+                    of Richmond, Virginia, but they never formally adopted him. After spending a short period at the University of Virginia and
+                    briefly attempting a military career, Poe parted ways with the Allans. Poe's publishing career began humbly, with an anonymous
+                    collection of poems, Tamerlane and Other Poems (1827), credited only to "a Bostonian".
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="hashwrap-sideshcontent">
+
+            <p class="hashlist"><b>Stories by Poe</b></p>
+                
+                <li class="hashlist">A Descent Into The Maelstrom (1841)</li>
+                <li class="hashlist">The Black Cat (1843)</li>
+                <li class="hashlist">The Tell-Tale Heart (1843)</li>
+                <li class="hashlist">The Cask of Amontillado (1846)</li>
+                <li class="hashlist">Bon-Bon (1850)</li>
+
+            <p style="padding-top: 1em;"> <b>Comments</b> </p>
+
+                <p class="hashwrap-sideshcontent"> We want to hear from you! 
+                <br>If you have any suggestions, anything you'd like to see on this site, do please let us know!   
+            </p>
+
+        </div>
     </div>
 
 </body>
